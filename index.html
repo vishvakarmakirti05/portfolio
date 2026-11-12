@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDIT HERE: page title and description (shown in Google results and when sharing) -->
+  <title>Kirti Vishvakarma | IT Enthusiast, Kanpur</title>
+  <meta name="description" content="Portfolio of Kirti Vishvakarma, a BCA graduate from Kanpur training in Computer Software Applications at NSTI Kanpur. Python, MySQL, AI and data tools.">
+  <meta name="theme-color" content="#4338ca">
+
+  <!-- Open Graph (link previews). EDIT HERE: replace [YOUR-SITE-URL] after you publish, e.g. https://vishvakarmakirti05.github.io/ -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kirti Vishvakarma | IT Enthusiast">
+  <meta property="og:description" content="BCA graduate from Kanpur. Python, MySQL, AI and data tools.">
+  <meta property="og:url" content="[YOUR-SITE-URL]">
+  <meta property="og:image" content="[YOUR-SITE-URL]assets/images/profile.jpg">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Fonts: Bricolage Grotesque (headings) + Source Sans 3 (body). Falls back to system fonts if offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Apply saved theme before the page paints, so there is no flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Icon library (inline SVG, no external files). Used with <svg class="icon"><use href="#i-name"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Kirti Vishvakarma, home">Kirti V.</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+          <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg class="icon icon-open"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== 1. HOME ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <!-- EDIT HERE: name, headline and short introduction -->
+          <p class="hero-hello">Hello, I'm</p>
+          <h1 id="hero-title">Kirti Vishvakarma</h1>
+          <p class="hero-role">IT Enthusiast</p>
+          <p class="hero-intro">
+            I am a BCA graduate from Kanpur, now training in Computer Software Applications at NSTI Kanpur.
+            I work with Python and MySQL, and I am learning AI and data tools.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+            <!-- Resume file: assets/documents/resume.pdf (replace the file to update it) -->
+            <a class="btn btn-ghost" href="assets/documents/resume.pdf" download="Kirti-Vishvakarma-Resume.pdf">
+              <svg class="icon"><use href="#i-download"/></svg> Download Resume
+            </a>
+          </div>
+          <p class="hero-location"><svg class="icon"><use href="#i-pin"/></svg> Kanpur, Uttar Pradesh, India</p>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <!-- EDIT HERE: replace assets/images/profile.jpg to change the photo -->
+            <img src="assets/images/profile.jpg" alt="Portrait of Kirti Vishvakarma" width="640" height="800">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container narrow">
+        <h2 id="about-title">About me</h2>
+        <!-- EDIT HERE: about text (only facts from your resume) -->
+        <p>
+          I completed my Bachelor of Computer Application (BCA) at Axis Institute of Higher Education, Kanpur,
+          and I am now doing CITS in Computer Software Applications (CSA) at NSTI Kanpur.
+        </p>
+        <p>
+          I enjoy working with Python and MySQL. I built an online voting system as my BCA project, and I am
+          currently building a student ERP system for NSTI Kanpur. I also did a 3-week internship in AI and
+          cloud computing with Edunet Foundation.
+        </p>
+        <p>
+          I am looking for a role where I can use my skills, keep learning, and grow with the team.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 3. EDUCATION ===================== -->
+    <section class="section alt" id="education" aria-labelledby="education-title">
+      <div class="container narrow">
+        <h2 id="education-title">Education</h2>
+
+        <!-- This is a real timeline: newest first. To add an entry, copy one <li class="timeline-item"> block. -->
+        <ol class="timeline">
+          <!-- EDIT HERE -->
+          <li class="timeline-item">
+            <p class="timeline-date">2026 to 2027 (pursuing)</p>
+            <h3>CITS (Craft Instructor Training Scheme)</h3>
+            <p>Trade: Computer Software Applications (CSA)<br>National Skill Training Institute (NSTI), Kanpur</p>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">2023 to 2026</p>
+            <h3>Bachelor of Computer Application (BCA)</h3>
+            <p>Axis Institute of Higher Education, Kanpur (CSJMU, Kanpur)<br>Score: 75%</p>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">2017</p>
+            <h3>Higher Secondary</h3>
+            <p>MAA SVM Inter College, Yashoda Nagar, Kanpur (U.P. Board)<br>Score: 74%</p>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">2015</p>
+            <h3>Senior Secondary</h3>
+            <p>S S Mandir HSS, Yashoda Nagar, Gangapur, Kanpur (U.P. Board)<br>Score: 76%</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 4. SKILLS ===================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+
+        <div class="skills-grid">
+          <!-- EDIT HERE: add or remove <li> items inside each list -->
+          <div class="skill-group">
+            <h3>Core trade skills</h3>
+            <ul class="chips">
+              <li>Python Programming</li>
+              <li>MySQL</li>
+              <li>C (Basic)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Computer skills</h3>
+            <ul class="chips">
+              <li>MS Office</li>
+              <li>Excel</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Software and tools</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Power BI</li>
+              <li>VS Code</li>
+              <li>XAMPP</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Soft skills</h3>
+            <ul class="chips">
+              <li>Communication</li>
+              <li>Problem Solving</li>
+              <li>Teamwork</li>
+              <li>Team Management</li>
+              <li>Leadership</li>
+              <li>Negotiation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PROJECTS ===================== -->
+    <section class="section alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+
+        <div class="cards" id="project-list">
+
+          <!--
+            ADD A NEW PROJECT: copy one whole <article class="card project"> block, paste it below the last one,
+            then change the image, title, text and tags.
+            LINKS: when you have a GitHub or demo link, remove the comment marks around the link block.
+          -->
+
+          <!-- EDIT HERE: Project 1 -->
+          <article class="card project reveal">
+            <div class="project-image">
+              <!-- Replace with a real screenshot: assets/images/project-voting.jpg (then change the file name below) -->
+              <img src="assets/images/project-voting.svg" alt="Illustration of the Online Voting System project" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-body">
+              <h3>Online Voting System</h3>
+              <p class="project-type">BCA project</p>
+              <p>A secure web-based voting platform that allows users to vote online and view election results. The admin module adds voters and candidates and monitors the results.</p>
+              <p><strong>My contribution:</strong> I prepared the project presentation and explained the project workflow and features.</p>
+              <ul class="tags" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>XAMPP</li><li>VS Code</li>
+              </ul>
+              <!-- Add your link here, then remove these comment marks:
+              <div class="project-links">
+                <a class="btn btn-small btn-outline" href="https://github.com/vishvakarmakirti05/YOUR-REPO" target="_blank" rel="noopener noreferrer">View on GitHub <svg class="icon"><use href="#i-external"/></svg></a>
+              </div>
+              -->
+            </div>
+          </article>
+
+          <!-- EDIT HERE: Project 2 -->
+          <article class="card project reveal">
+            <div class="project-image">
+              <img src="assets/images/project-resume-analyzer.svg" alt="Illustration of the AI Resume Analyzer project" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-body">
+              <h3>AI Resume Analyzer</h3>
+              <p class="project-type">Project</p>
+              <p>An AI tool that analyzes resumes and suggests improvements to make them job-ready.</p>
+              <p><strong>My contribution:</strong> I designed the project, worked on the resume analysis, and prepared the PPT.</p>
+              <ul class="tags" aria-label="Technologies used">
+                <li>Python</li><li>NLP</li><li>Machine Learning</li><li>HTML</li><li>CSS</li><li>MySQL</li>
+              </ul>
+              <!-- Add your link here, then remove these comment marks:
+              <div class="project-links">
+                <a class="btn btn-small btn-outline" href="https://github.com/vishvakarmakirti05/YOUR-REPO" target="_blank" rel="noopener noreferrer">View on GitHub <svg class="icon"><use href="#i-external"/></svg></a>
+              </div>
+              -->
+            </div>
+          </article>
+
+          <!-- EDIT HERE: Project 3 -->
+          <article class="card project reveal">
+            <div class="project-image">
+              <img src="assets/images/project-erp.svg" alt="Illustration of the NSTI Student ERP System project" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-body">
+              <h3>NSTI Student ERP System</h3>
+              <p class="project-type">Current project</p>
+              <p>A college management system for NSTI Kanpur with modules for student registration, attendance, and exam and training records.</p>
+              <ul class="tags" aria-label="Technologies used">
+                <li>Python</li><li>MySQL</li><li>VS Code</li>
+              </ul>
+              <!-- Add your link here, then remove these comment marks:
+              <div class="project-links">
+                <a class="btn btn-small btn-outline" href="https://github.com/vishvakarmakirti05/YOUR-REPO" target="_blank" rel="noopener noreferrer">View on GitHub <svg class="icon"><use href="#i-external"/></svg></a>
+              </div>
+              -->
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. INTERNSHIP / TRAINING ===================== -->
+    <section class="section" id="training" aria-labelledby="training-title">
+      <div class="container">
+        <h2 id="training-title">Internship and training</h2>
+
+        <div class="training-grid">
+          <!-- EDIT HERE: internship -->
+          <article class="card reveal">
+            <p class="card-meta">5 Aug 2024 to 30 Aug 2024 (3 weeks)</p>
+            <h3>Intern, Emerging Technologies (AI and Cloud)</h3>
+            <p class="card-org">Edunet Foundation</p>
+            <p>A 3-week internship focused on AI and cloud technologies, using IBM SkillsBuild resources.</p>
+            <ul class="plain-list">
+              <li>Gained practical exposure to Artificial Intelligence and Cloud Computing.</li>
+              <li>Learned to use IBM Cloud Platform services for real-world applications.</li>
+            </ul>
+            <p><strong>Skills learned:</strong> AI, Cloud Computing</p>
+          </article>
+
+          <!-- EDIT HERE: workshops and activities -->
+          <article class="card reveal">
+            <h3>Workshops and activities</h3>
+            <ul class="plain-list spaced">
+              <li><strong>Crack-Ed PDP Workshop (2024).</strong> A personality development workshop to prepare for the college-to-career transition.</li>
+              <li><strong>Poster Making Competition.</strong> Took part in a poster competition on Artificial Intelligence.</li>
+              <li><strong>Diya Making Competition.</strong> Made diyas that each showed a management concept: planning, organizing, leading and controlling.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. CERTIFICATIONS ===================== -->
+    <section class="section alt" id="certifications" aria-labelledby="certs-title">
+      <div class="container narrow">
+        <h2 id="certs-title">Certifications</h2>
+
+        <!--
+          ADD A CERTIFICATE: copy one <li class="cert reveal"> block.
+          The "View certificate" link is optional. Delete the <a> if you have no link.
+        -->
+        <ul class="cert-list">
+          <!-- EDIT HERE -->
+          <li class="cert reveal">
+            <div>
+              <h3>AI Literacy</h3>
+              <p>IBM SkillsBuild, October 2026</p>
+            </div>
+            <a class="btn btn-small btn-outline" href="https://www.credly.com/badges/7f3fed3c-da9a-4511-9a02-0d274705b9d6/public_url" target="_blank" rel="noopener noreferrer">View certificate <svg class="icon"><use href="#i-external"/></svg></a>
+          </li>
+          <li class="cert reveal">
+            <div>
+              <h3>Getting Started with Enterprise-grade AI</h3>
+              <p>IBM SkillsBuild, August 2024</p>
+            </div>
+            <a class="btn btn-small btn-outline" href="https://www.credly.com/go/MkBv50Tw" target="_blank" rel="noopener noreferrer">View certificate <svg class="icon"><use href="#i-external"/></svg></a>
+          </li>
+          <li class="cert reveal">
+            <div>
+              <h3>Introduction to MongoDB (For Students)</h3>
+              <p>MongoDB University, August 2024</p>
+            </div>
+            <a class="btn btn-small btn-outline" href="assets/documents/certificates/mongodb-intro.pdf" target="_blank" rel="noopener noreferrer">View certificate <svg class="icon"><use href="#i-external"/></svg></a>
+          </li>
+          <li class="cert reveal">
+            <div>
+              <h3>AI for All</h3>
+              <p>Intel Technology India Pvt. Ltd., through Skill India Digital Hub, 2026</p>
+            </div>
+          </li>
+          <li class="cert reveal">
+            <div>
+              <h3>Professional Edge</h3>
+              <p>NIIT Foundation, 2026</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 8. CONTACT ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <h2 id="contact-title">Contact</h2>
+        <p>I am open to entry-level opportunities and training roles. The quickest way to reach me is by email.</p>
+
+        <!-- EDIT HERE: contact details -->
+        <ul class="contact-list">
+          <li>
+            <svg class="icon"><use href="#i-mail"/></svg>
+            <a href="mailto:vishvakarmakirti05@gmail.com">vishvakarmakirti05@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon"><use href="#i-phone"/></svg>
+            <a href="tel:+917706081919">+91 77060 81919</a>
+          </li>
+          <li>
+            <svg class="icon"><use href="#i-linkedin"/></svg>
+            <a href="https://www.linkedin.com/in/kirti-vishwakarma-6b10902bb" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+          </li>
+          <li>
+            <svg class="icon"><use href="#i-github"/></svg>
+            <a href="https://github.com/vishvakarmakirti05" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+          </li>
+          <li>
+            <svg class="icon"><use href="#i-pin"/></svg>
+            <span>Kanpur, Uttar Pradesh, India</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Kirti Vishvakarma</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <svg class="icon"><use href="#i-up"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
